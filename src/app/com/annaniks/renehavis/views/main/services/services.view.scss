@@ -1,0 +1,48 @@
+@import "../../../../../../../assets/mixin";
+
+.services_section {
+    width: 100%;
+
+    .tab {
+        .service_tab {
+            width: 50%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+
+            .service_tab_item {
+                width: 100%;
+                background: #f69165;
+                transition: all .5s ease-out;
+                text-transform: uppercase;
+                text-align: center;
+                align-items: center;
+                border-radius: 5px;
+
+                .title {
+                    @include text(21px, #ffffff);
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    padding: 25px 40px;
+                    position: relative;
+                    &::after {
+                        content:"";
+                        bottom: -14px;
+                        position: absolute;
+                        left: 47%;
+                        line-height: 0;
+                        box-sizing: border-box;
+                        width: 0; 
+                        height: 0; 
+                        border-left: 15px solid transparent;
+                        border-right: 15px solid transparent;
+                        border-top: 15px solid #f69165;
+                        z-index: 1;
+                        transition: all .5s ease-out;
+                    }
+
+                }
+            }
+        }
+    }
+}

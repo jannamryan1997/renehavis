@@ -1,0 +1,61 @@
+@import "../../../../../../assets/mixin";
+
+.service_tab_section {
+    width: 100;
+    margin: 50px auto;
+
+    .service_tab_content {
+        .service_tab_item {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+
+            .item {
+                width: 29%;
+                padding: 1.2em;
+                display: flex;
+
+                .service_image {
+                    height: 45px;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: #f69165;
+                    }
+                }
+
+                .text_description {
+                    margin-left: 20px;
+
+                    .title {
+                        @include text(20px, #4a5666);
+                        margin-bottom: 25px;
+                        opacity: 1;
+                        visibility: visible;
+                        font-weight: 700;
+                        transition: opacity 0.24s ease-in-out;
+                        cursor: pointer;
+
+                        &::before {
+                            display: block;
+                            content: '';
+                            width: 50px;
+                            margin-bottom: 10px;
+                            border-bottom: solid 3px #f69165;
+                            transform: scaleX(0);
+                            transition: transform 250ms ease-in-out;
+                        }
+
+                        &:hover::before {
+                            transform: scaleX(1);
+                        }
+                    }
+
+                    .type {
+                        @include text(14px, #6e7682);
+                    }
+                }
+            }
+        }
+    }
+}

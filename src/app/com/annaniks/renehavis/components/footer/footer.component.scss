@@ -1,0 +1,56 @@
+@import "../../../../../../assets/mixin";
+
+.footer {
+    width: 100%;
+    background: #262626;
+    padding: 10px 0;
+
+    .footer_container {
+        width: 75%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        margin: 30px auto;
+
+        .type {
+            @include text(16px, #ffffff);
+            margin-bottom: 15px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+
+    .title {
+        @include title-style(14px);
+        transition: all .5s ease-out;
+        cursor: pointer;
+        text-transform: uppercase;
+
+        &:hover {
+            color: #f69165;
+        }
+    }
+
+    .menu {
+        float: left;
+    }
+
+    .last {
+        float: right;
+        margin-left: 100px;
+    }
+
+    .subscrib{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        .btn_email{
+    @include button-style(#3e3e3e,#b9b9b9);
+        }
+        .btn_reg{
+    @include button-style(#f69165,#ffffff);
+        }
+    }
+
+}

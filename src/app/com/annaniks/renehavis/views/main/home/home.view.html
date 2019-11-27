@@ -1,0 +1,33 @@
+<section class="home_section">
+    <ngx-slick-carousel class="carousel"  [config]="slideConfig" >
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+            <img class="image carousel_image" src="{{ slide.img }}" alt="" width="100%">
+        </div>
+    </ngx-slick-carousel> 
+</section>
+<section class="services_section">
+    <div class="tab">
+        <div class="service_tab">
+            <div class="service_tab_item">
+                <p class="title">our services</p>
+            </div>
+        </div>
+        <div class="service_tab_section">
+            <div class="service_tab_content">
+                <div class="service_tab_item">
+                    <div class="item" *ngFor="let item of serviceTabItem">
+
+                        <img class="image service_image" src="{{item.image}}">
+                        <div class="text_description">
+                            <p class="title">{{item.title}}</p>
+                            <p class="type">{{item.type}}</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+

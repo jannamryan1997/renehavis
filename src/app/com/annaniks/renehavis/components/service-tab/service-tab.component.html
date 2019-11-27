@@ -1,0 +1,15 @@
+<section class="service_tab_section">
+    <div class="service_tab_content">
+        <div class="service_tab_item">
+            <div class="item" *ngFor="let item of serviceTabItem">
+               
+                    <img class="image service_image" src="{{item.image}}">
+                    <div class="text_description">
+                        <p class="title">{{item.title}}</p>
+                        <p class="type">{{item.type}}</p>
+                </div>
+             
+            </div>
+        </div>
+    </div>
+</section>

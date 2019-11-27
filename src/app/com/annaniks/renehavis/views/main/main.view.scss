@@ -1,0 +1,76 @@
+@import '../../../../../../assets/mixin';
+// .page_layout {
+//     max-width: 1920px;
+//     height: 100vh;
+//     background: #D9D9D9;
+
+//     &_content {
+//         .company_section {
+//             width: 100%;
+//             background: #609DBA;
+//             height: 50vh;
+//             display: flex;
+
+//             .company_container {
+//                 width: 50%;
+//                 margin: auto;
+//                 align-items: center;
+//                 text-align: center;
+
+//                 .type {
+//                     @include text(40px,#ffffff);
+//                     margin-bottom: 20px;
+//                 }
+//             }
+//         }
+
+//         .contact_section {
+//             width: 45%;
+//             margin: auto;
+//             box-shadow: 5px 2px 15px 0 rgba(0, 0, 0, 0.65);
+//             background-color: #EAEAEA;
+//             margin: -140px auto 0 auto;
+//             padding-bottom: 30px;
+//             padding: 1.2em;
+
+//             .contact_container {
+//                 .contact_container_item {
+//                     width: 100%;
+//                     display: flex;
+//                     justify-content: space-between;
+//                     flex-wrap: wrap;
+
+//                     .contact_item {
+//                         width: 31%;
+//                         border: 1px solid#DCDCDC;
+//                         box-shadow: 0px 3px 7px 0 #DCDCDC;
+
+//                         .contact_image {
+//                             height: 200px;
+//                             width: 100%;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
+.page_layout {
+    max-width: 1920px;
+
+    .page_layout_content {
+        .page_layout_container {
+            width: 100%;
+
+            // background: #262626;
+        }
+
+        .main_layout {
+            width: 100%;
+            width: 75%;
+            margin: 50px auto;
+        }
+    }
+}

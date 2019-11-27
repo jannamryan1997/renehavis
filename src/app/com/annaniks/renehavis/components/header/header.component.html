@@ -1,0 +1,10 @@
+<header class="header_content">
+        <nav class="navbar" #navbar>
+                <div class="logo">
+                    <img src="/assets/images/logo.png">
+                </div>
+                <ul class="nav_items">
+                    <li class="main_nav_item" *ngFor="let item of navItem"><a class="main_nav_item_link" >{{item.link}}</a></li>
+                </ul>
+            </nav>
+</header>
