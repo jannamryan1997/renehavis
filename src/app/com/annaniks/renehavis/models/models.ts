@@ -1,6 +1,7 @@
 export interface MenuItem {
     link: string,
     scroll: number;
+    router:string;
 
 }
 
@@ -10,4 +11,8 @@ export interface ServiceTabItem {
     type: string;
 }
 
-
+export interface SlidesText {
+    name: string;
+    profession: string;
+    title: string;
+}

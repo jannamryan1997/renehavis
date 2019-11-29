@@ -1,0 +1,34 @@
+@import "../../../../../../assets/mixin";
+.banner_section{
+    width: 100%;
+    .banner_content{
+        position: relative;
+        display: flex;
+        align-items: center;
+        .banner_image{
+            width: 100%;
+            height: 250px;
+          
+          }
+          .text_item{
+            position: absolute;
+            margin: 0 125px;
+          .type{
+              @include text(40px,#4a5666);
+              font-weight: 700;
+              margin-bottom: 20px
+          
+            }
+            .title{
+                @include text(14px,#4a5666);
+                cursor: pointer;
+                display: inline-block;
+            }
+            .section_name{
+                @include text(15px, #005984);
+                display: inline-block;
+                font-weight: 700;
+            }
+          }
+    }
+}

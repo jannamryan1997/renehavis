@@ -9,15 +9,20 @@ import { MenuItem } from '../../models/models';
 
 export class HeaderComponent implements OnInit {
 
+
     public navItem: MenuItem[] = [
-        { link: "Аптеки", scroll: 0 },
-        { link: "Полезные статьи", scroll: 0 },
-        { link: "Инструкция", scroll: 10 },
-        { link: "О Продукте/Пациентам врачам", scroll: 340 },
+        { link: "О Продукте", scroll: 0, router: "/main/aboutProducte" },
+        { link: "Аптеки", scroll: 0, router: "#" },
+        { link: "Полезные статьи", scroll: 0, router: "#" },
+        { link: "Инструкция", scroll: 10, router: "#" },
+        { link: "Врачам/пациентам", scroll: 340, router: "#" },
+        { link: "Контакты", scroll: 340, router: "/main/contacts" },
     ]
 
     constructor() { }
 
-    ngOnInit() { }
+    ngOnInit() {
+    }
+
 
 }

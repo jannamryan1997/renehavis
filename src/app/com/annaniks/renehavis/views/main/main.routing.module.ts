@@ -8,7 +8,9 @@ const mainRoutes: Routes = [
         path: "", component: MainView, children: [
             { path: "", redirectTo: "home", pathMatch: "full" },
             { path: "home", loadChildren: "src/app/com/annaniks/renehavis/views/main/home/home.module#HomeModule" },
-            { path: "services", loadChildren: "src/app/com/annaniks/renehavis/views/main/services/services.module#ServicesModule" }
+            { path: "contacts", loadChildren: "src/app/com/annaniks/renehavis/views/main/contacts/contacts.module#ContactsModule" },
+            { path: "services", loadChildren: "src/app/com/annaniks/renehavis/views/main/services/services.module#ServicesModule" },
+            { path: "aboutProducte", loadChildren: "src/app/com/annaniks/renehavis/views/main/aboutProducte/about-producte.module#AboutProducteModule" }
         ]
     },
 
