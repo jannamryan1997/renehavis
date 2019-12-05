@@ -1,3 +1,82 @@
+@import "../../../../../../../assets/mixin";
+
 .contact_section {
     width: 100%;
+
+    .contact_container {
+        width: 75%;
+        margin: 60px auto;
+
+        #map {
+            height: 400px;
+        }
+
+        .contact_content {
+            margin: 50px auto;
+
+            .type {
+                @include text(30px, #20262e);
+                margin-bottom: 15px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+
+            .contact_item {
+                display: flex;
+
+                .list {
+                    display: flex;
+                    width: 80%;
+
+                    .title {
+                        @include title-style(15px);
+                        text-transform: uppercase;
+                        transition: all .5s ease-out;
+                        line-height: 1.6;
+
+                        &:hover {
+                            color: #005984;
+                        }
+                        i{
+                            margin-right: 10px;
+                        }
+                    }
+
+                    .menu {
+                        width: 40%;
+                    }
+
+                    .last {
+                        width: 40%;
+                        margin-left: 100px;
+                    }
+
+
+                }
+
+                .registration_list {
+                    width: 30%;
+                    .text{
+                    @include text(21px, #20262e);
+                    margin-bottom: 15px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    }
+                    .list_item {
+                        display: flex;
+
+                        .image {
+                            width: 25px;
+                            margin-right: 10px;
+                        }
+
+                        .title {
+                            color: #2196F3;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

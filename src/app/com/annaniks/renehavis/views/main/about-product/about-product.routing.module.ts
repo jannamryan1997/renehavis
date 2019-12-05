@@ -1,9 +1,9 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
-import { AboutProducteView } from './about-produce.view';
+import { AboutProductView } from './about-product.view';
 
 const aboutProducte: Routes = [
-    { path: "", component: AboutProducteView }
+    { path: "", component: AboutProductView }
 ]
 
 @NgModule({
@@ -11,6 +11,6 @@ const aboutProducte: Routes = [
     exports: [RouterModule]
 })
 
-export class AboutProducteRoutigModule {
+export class AboutProductRoutigModule {
 
 }

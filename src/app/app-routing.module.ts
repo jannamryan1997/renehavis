@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { MainView } from './com/annaniks/renehavis/views/main/main.view';
 
 const routes: Routes = [
   {path:"",redirectTo:"main",pathMatch:"full"},

@@ -1,0 +1,49 @@
+@import "../../../../../../../assets/mixin";
+
+.instruction_section {
+    width: 100%;
+
+    .instruction_content {
+        width: 75%;
+        margin: 60px auto;
+
+        .title {
+            @include text(20px, #005984);
+            font-weight: 700;
+        }
+
+        .description {
+            display: flex;
+
+            .text {
+                @include text(16px, #666666);
+                margin: 20px 0;
+                width: calc(100% - 350px);
+                margin-right: 100px;
+            }
+
+            .instruction_image {
+                width: 250px;
+                height: 160px;
+                margin: 40px 0;
+            }
+
+        }
+
+        .text {
+            @include text(16px, #666666);
+            margin: 20px 0;
+        }
+
+    }
+}
+
+.text::before {
+    content: "";
+    display:inline-block;
+    border-radius: 50%;
+    height: 8px;
+    width: 8px;
+    background: #005984;
+    margin-right: 10px;
+}

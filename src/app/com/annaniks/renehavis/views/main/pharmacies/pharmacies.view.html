@@ -1,0 +1,23 @@
+<section class="pharmacies_section">
+    <app-banner [text]="'Аптеки'"></app-banner>
+    <div class="pharmacies_container">
+        <div id="map"></div>
+        <div class="pharmacies_content">
+            <div class="pharmacies_right_content">
+                <ul>
+                    <li class="link" *ngFor="let item of pharmaciesRightItem">{{item.link}}</li>
+
+                </ul>
+            </div>
+            <div class="pharmacies_left_content">
+                <div class="phermotion_left_item">
+                    <ul>
+                        <li class="link" *ngFor="let item of pharmaciesLeftItem">{{item.link}}</li>
+
+                    </ul>
+                    <img class="image" src="assets/images/apteka.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

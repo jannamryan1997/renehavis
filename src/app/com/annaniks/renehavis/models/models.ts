@@ -1,7 +1,7 @@
 export interface MenuItem {
     link: string,
     scroll: number;
-    router:string;
+    router: string;
 
 }
 
@@ -15,4 +15,11 @@ export interface SlidesText {
     name: string;
     profession: string;
     title: string;
+}
+
+export class ArticlesItem {
+    id: number;
+    type: string;
+    title: string;
+    image:string;
 }

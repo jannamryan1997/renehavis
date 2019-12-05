@@ -1,0 +1,53 @@
+@import "../../../../../../../assets/mixin";
+
+.articles_section {
+    width: 100%;
+
+    .articles_content {
+        width: 75%;
+        margin: 60px auto;
+
+        .articles_item {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+
+            .item {
+                width: 33.33333%;
+            
+            
+              .item_content{
+                margin: 1.2em;
+                padding: 1.2em;
+                box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.23);
+              
+                cursor: pointer;
+                transition: .3s all ease-out;
+              
+                &:hover{
+                   transform: scale(1.01)
+                }
+
+                .type {
+                    @include text(15, #004969);
+                    font-weight: 700;
+                    margin: 20px;
+
+
+                }
+
+                .articles_image {
+                    height: 300px;
+                    width: 100%;
+                }
+
+                .text {
+                    @include text(14px, #3b3b3b);
+                    font-weight: 700;
+                    margin: 20px 0;
+                }
+            }
+        }
+    }
+}
+}

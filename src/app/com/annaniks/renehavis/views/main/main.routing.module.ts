@@ -10,7 +10,12 @@ const mainRoutes: Routes = [
             { path: "home", loadChildren: "src/app/com/annaniks/renehavis/views/main/home/home.module#HomeModule" },
             { path: "contacts", loadChildren: "src/app/com/annaniks/renehavis/views/main/contacts/contacts.module#ContactsModule" },
             { path: "services", loadChildren: "src/app/com/annaniks/renehavis/views/main/services/services.module#ServicesModule" },
-            { path: "aboutProducte", loadChildren: "src/app/com/annaniks/renehavis/views/main/aboutProducte/about-producte.module#AboutProducteModule" }
+            { path: "about-product", loadChildren: "src/app/com/annaniks/renehavis/views/main/about-product/about-product.module#AboutProductModule" },
+            { path: "instruction", loadChildren: "src/app/com/annaniks/renehavis/views/main/instruction/instruction.module#InstructionModule" },
+            { path: "pharmacies", loadChildren: "src/app/com/annaniks/renehavis/views/main/pharmacies/pharmacies.module#PharmaciesModule" },
+            { path: "doctors", loadChildren: "src/app/com/annaniks/renehavis/views/main/doctors/doctors.module#DoctorsModule" },
+            { path: "articles", loadChildren: "src/app/com/annaniks/renehavis/views/main/articles/articles.module#ArticlesModule" },
+            { path: "articles/articles-item/:id", loadChildren: "src/app/com/annaniks/renehavis/views/main/articles/articles-item/articles-item.module#ArticlesItemModule" }
         ]
     },
 

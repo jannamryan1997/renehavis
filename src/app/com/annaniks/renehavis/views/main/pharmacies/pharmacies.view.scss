@@ -1,0 +1,58 @@
+@import "../../../../../../../assets/mixin";
+
+.pharmacies_section {
+    width: 100%;
+
+    .pharmacies_container {
+        margin: 60px auto;
+        width: 75%;
+
+
+        #map {
+            height: 400px;
+            border-radius: 5px;
+        }
+
+        .pharmacies_content {
+            display: flex;
+            margin: 50px 0;
+
+            .link {
+                @include text(18px, #4a5666);
+                margin-bottom: 20px;
+                word-break: break-word;
+
+                &::before {
+                    content: "";
+                    display: inline-block;
+                    border-radius: 50%;
+                    width: 8px;
+                    height: 8px;
+                    background-color: #005984;
+                    margin-right: 10px;
+                }
+            }
+
+            .pharmacies_right_content {
+                width: 50%;
+            }
+
+            .pharmacies_left_content {
+                width: 50%;
+
+                .phermotion_left_item {
+                    width: 90%;
+                    margin-left: 60px;
+
+                    .image {
+                        height: 200px;
+                        float: right;
+                    }
+                }
+
+
+            }
+        }
+
+    }
+}

@@ -14,6 +14,9 @@
     }
 
     .logo {
+        cursor: pointer;
+        outline: none;
+
         img {
             width: 150px;
             height: 55px;
@@ -25,6 +28,7 @@
         display: flex;
         border-radius: 5px;
         align-items: center;
+        outline: none;
 
         .main_nav_item {
             &_link {
@@ -32,12 +36,12 @@
                 font-weight: bold;
                 text-align: left;
                 color: #8993a1;
-                // padding: 25px;
                 padding: 10px 25px;
                 text-decoration: none;
                 cursor: pointer;
                 text-transform: uppercase;
                 font-family: 'Roboto', sans-serif;
+
 
                 &:after {
                     display: block;
@@ -55,4 +59,9 @@
         }
 
     }
+}
+
+
+.active_item{
+    color: #005984 !important;
 }

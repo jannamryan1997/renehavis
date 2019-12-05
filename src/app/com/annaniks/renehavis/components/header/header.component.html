@@ -1,10 +1,10 @@
 <header class="header_content">
         <nav class="navbar" #navbar>
-                <div class="logo">
+                <div class="logo" routerLink="/main/home">
                     <img src="/assets/images/logo.png">
                 </div>
                 <ul class="nav_items">
-                    <li class="main_nav_item" *ngFor="let item of navItem"><a class="main_nav_item_link" [routerLink]="item.router">{{item.link}}</a></li>
+                    <li class="main_nav_item" *ngFor="let item of navItem"><a class="main_nav_item_link" [routerLink]="item.router" routerLinkActive="active_item">{{item.link}}</a></li>
                 </ul>
             </nav>
 </header>

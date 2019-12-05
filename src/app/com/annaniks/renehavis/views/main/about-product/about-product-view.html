@@ -1,0 +1,50 @@
+<section class="about_section">
+    <app-banner [text]="'О Продукте'"></app-banner>
+    <div class="about_container">
+        <p class="product_description">RenehaVis (Р-енехаВис) - уникальная запатентованная инъекция, содержащая две
+            различные по
+            концентрации и молекулярному весу Гиалуроновые Кислоты (ГК)
+            в одном шприце.
+        </p>
+        <div class="product_image">
+            <img class="image about_image" src="assets/images/aboutProduct.png">
+        </div>
+        <div class="about_content">
+            <div class="about_left_content">
+                <div class="left_content_item">
+                    <img class="image about_image" src="assets/images/about.png">
+                </div>
+
+            </div>
+            <div class="about_right_content">
+                <p class="type">ПРЕИМУЩЕСТВА</p>
+                <ul>
+                    <li *ngFor="let item of aboutItem">
+                            <div class="radius" [ngStyle]="{'background-color':item.color}"></div>
+                        <p class="link">{{item.link}}</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="product_description_content">
+            <div class="description_left_content">
+                <div class="description_item">
+                    <ul>
+                        <li *ngFor="let item of descriptionItem">
+                            <div class="radius" [ngStyle]="{'background-color':item.color}">
+                                    <i class="material-icons">
+                                            receipt
+                                            </i>
+                            </div>
+                            <div class="link_item">
+                                    <span class="link">{{item.link}}</span>
+                                    <p class="title">{{item.title}}</p>
+                            </div>
+                          
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
