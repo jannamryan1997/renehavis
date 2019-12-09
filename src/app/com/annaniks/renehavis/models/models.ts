@@ -9,6 +9,7 @@ export interface ServiceTabItem {
     image: string;
     title: string;
     type: string;
+    router:string;
 }
 
 export interface SlidesText {
@@ -21,5 +22,22 @@ export class ArticlesItem {
     id: number;
     type: string;
     title: string;
-    image:string;
+    image: string;
+}
+export class AboutItem {
+    color: string;
+    link: string;
+}
+
+export class DescriptionItem {
+    color: string;
+    link: string;
+    title: string;
+}
+
+export interface Slides {
+    img: string;
+}
+export interface PharmaciesItem {
+    link: string;
 }

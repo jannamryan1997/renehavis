@@ -25,6 +25,7 @@
         transition: all .5s ease-out;
         cursor: pointer;
         text-transform: uppercase;
+        outline: none;
 
         &:hover {
             color: #005984;
@@ -40,17 +41,14 @@
         margin-left: 100px;
     }
     
-    .subscrib{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        .btn_email{
-    @include button-style(#3e3e3e,#b9b9b9);
-        }
-        .btn_reg{
-    @include button-style(#005984,#ffffff);
-        }
-    }
+ .social_media{
+     display: flex;
+     .social_image{
+         height: 50px;
+     }
+     .title{
+         margin: auto;
+     }
+ }
 
 }

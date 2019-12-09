@@ -53,6 +53,43 @@
 
             }
         }
+        .pharmacies_top{
+            .text{
+                @include text(30px,#237D26);
+                font-weight: 700;
+                text-align: center;
+                text-transform:uppercase;
+              
+                
+            }
+        .pharmacies_top_content{
+            margin: 40px auto;
+            display: flex;
+              align-items: center;
+              width: 60%;
+            .pharmacies_image{
+                height: 150px;
+                width: 150px;
+              
+            }
+            .text_item{
+                @include text(30px,#4a5666);
+                font-weight: 700;
+                margin-left: 60px;
+              
+                
+            }
+            .simbl{
+                color:#237D26;
+            }
+        }
 
     }
+}
+
+}
+
+.active_item{
+    text-decoration: underline !important;
+    cursor: pointer;
 }

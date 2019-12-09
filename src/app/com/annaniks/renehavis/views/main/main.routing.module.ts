@@ -15,7 +15,7 @@ const mainRoutes: Routes = [
             { path: "pharmacies", loadChildren: "src/app/com/annaniks/renehavis/views/main/pharmacies/pharmacies.module#PharmaciesModule" },
             { path: "doctors", loadChildren: "src/app/com/annaniks/renehavis/views/main/doctors/doctors.module#DoctorsModule" },
             { path: "articles", loadChildren: "src/app/com/annaniks/renehavis/views/main/articles/articles.module#ArticlesModule" },
-            { path: "articles/articles-item/:id", loadChildren: "src/app/com/annaniks/renehavis/views/main/articles/articles-item/articles-item.module#ArticlesItemModule" }
+            { path: "articles/:id", loadChildren: "src/app/com/annaniks/renehavis/views/main/articles/articles-item/articles-item.module#ArticlesItemModule" }
         ]
     },
 

@@ -2,11 +2,11 @@
         <app-banner [text]="'Полезные статьи'"></app-banner>
         <div class="articles_content">
             <div class="articles_item">
-                <div class="item" *ngFor="let item of articesItem" (click)="openArticlesItemPage(item.id)">
+                <div class="item" *ngFor="let item of articlesItem" (click)="openArticlesItemPage(item.id)">
                     <div class="item_content">
                             <p class="type">{{item.type}} </p>
                             <img class="image articles_image" src="{{item.image}}">
-                            <p class="text">{{item.title}}</p>
+                            <p class="text">{{item.title | slicetextPipe}}</p>
                     </div>
                    
                 </div>

@@ -1,10 +1,10 @@
-<header class="header_content">
-        <nav class="navbar" #navbar>
+<header class="header_content" #navbar>
+        <nav class="navbar"  >
                 <div class="logo" routerLink="/main/home">
                     <img src="/assets/images/logo.png">
                 </div>
-                <ul class="nav_items">
-                    <li class="main_nav_item" *ngFor="let item of navItem"><a class="main_nav_item_link" [routerLink]="item.router" routerLinkActive="active_item">{{item.link}}</a></li>
+                <ul class="nav_items" >
+                    <li class="main_nav_item" *ngFor="let item of navItem" (click)="windowScoll(item.scroll)"><a class="main_nav_item_link" [routerLink]="item.router" routerLinkActive="active_item">{{item.link}}</a></li>
                 </ul>
             </nav>
 </header>

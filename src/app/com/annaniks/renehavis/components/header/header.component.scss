@@ -3,11 +3,12 @@
     -webkit-box-shadow: 11px 4px 17px -8px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 11px 4px 17px -8px rgba(0, 0, 0, 0.75);
     box-shadow: 11px 4px 17px -8px rgba(0, 0, 0, 0.75);
+    transition: all 0.5s;
 
     .navbar {
         display: flex;
         align-items: center;
-        transition: all 0.5s;
+     
         justify-content: space-between;
         width: 75%;
         margin: 0 auto;
@@ -64,4 +65,13 @@
 
 .active_item{
     color: #005984 !important;
+}
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+ background: #ffffff;
+    z-index: 999999;
+    box-shadow: 11px 4px 17px -8px rgba(0, 0, 0, 0.75);
 }
