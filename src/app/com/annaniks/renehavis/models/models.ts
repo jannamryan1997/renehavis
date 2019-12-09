@@ -9,7 +9,7 @@ export interface ServiceTabItem {
     image: string;
     title: string;
     type: string;
-    router:string;
+    router?:string;
 }
 
 export interface SlidesText {
