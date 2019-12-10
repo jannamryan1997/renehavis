@@ -1,15 +1,42 @@
 <section class="articles_section">
-        <app-banner [text]="'Полезные статьи'"></app-banner>
-        <div class="articles_content">
-            <div class="articles_item">
-                <div class="item" *ngFor="let item of articlesItem" (click)="openArticlesItemPage(item.id)">
-                    <div class="item_content">
-                            <p class="type">{{item.type}} </p>
-                            <img class="image articles_image" src="{{item.image}}">
-                            <p class="text">{{item.title | slicetextPipe}}</p>
+    <app-banner [text]="'Полезные статьи'"></app-banner>
+    <div class="articles_content">
+        <div class="tab" [ngSwitch]="tab">
+            <div class="tab_content">
+                <div class="tab_item" (click)="changeTab(1)" [ngClass]="{'activTab':tab==1}">
+                    <p class="tab_title">
+                        ОРИГИНАЛ</p>
+                </div>
+                <div class="tab_item" (click)="changeTab(2)" [ngClass]="{'activTab':tab==2}">
+                    <p class="tab_title">ПЕРЕВОД С ОРИГИНАЛА</p>
+                </div>
+
+            </div>
+            <div class="original_description" *ngSwitchCase="1">
+                <div class="original_description_rigt_item">
+                    <div class="right_item">
+                        <img class="image right_item_image" src="assets/images/ORG0.bmp">
+                        <img class="image right_item_image" src="assets/images/ORG2.bmp">
+                        <img class="image right_item_image" src="assets/images/ORG4.bmp">
                     </div>
-                   
+                </div>
+                <div class="original_description_left_item">
+                    <div class="left_item">
+                        <img class="image left_item_image" src="assets/images/ORG1.bmp">
+                        <img class="image left_item_image" src="assets/images/ORG3.bmp">
+                        <img class="image left_item_image" src="assets/images/ORG5.bmp">
+                    </div>
                 </div>
             </div>
+            <div class="rus_description" *ngSwitchCase="2">
+                <div class="descriprion_item" *ngFor="let item of articlesItem">
+                    <img class="rus_image image" src="{{item.image}}">
+                </div>
+
+            </div>
+            <a class="download" [href]="openFile()" target="_blank">
+                <img class="download_image image" src="assets/images/download.png">
+            </a>
         </div>
-        </section>
+    </div>
+</section>

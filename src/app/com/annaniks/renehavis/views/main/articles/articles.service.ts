@@ -6,14 +6,14 @@ import { ArticlesItem } from '../../../models/models';
 export class ArticlesService {
 
     public articlesItem: ArticlesItem[] = [
-        { id: 1, type: "PATIENT SAYS", title: "Aenean placerat. In vulputate urna eu arcu. Aliquam erat volutpat. Suspendisse potenti. Morbi mattis felis at nunc. Duis viverra diam non justo. In nisl. Nullam sit amet magna in magna.", image: "assets/images/articles1.jpg" },
-        { id: 2, type: "Joe Cocer", title: "Aenean placerat. In vulputate urna eu arcu. Aliquam erat volutpat. Suspendisse potenti. Morbi mattis felis at nunc. Duis viverra diam non justo. In nisl. Nullam sit amet magna in magna.", image: "assets/images/articles2.jpg" },
-        { id: 3, type: "PATIENT SAYS", title: "Aenean placerat. In vulputate urna eu arcu. Aliquam erat volutpat. Suspendisse potenti. Morbi mattis felis at nunc. Duis viverra diam non justo. In nisl. Nullam sit amet magna in magna.", image: "assets/images/articles1.jpg" },
-        { id: 4, type: "Anna Grey", title: "Aenean placerat. In vulputate urna eu arcu. Aliquam erat volutpat. Suspendisse potenti. Morbi mattis felis at nunc. Duis viverra diam non justo. In nisl. Nullam sit amet magna in magna.", image: "assets/images/articles3.jpg" },
-        { id: 5, type: "PATIENT SAYS", title: "Aenean placerat. In vulputate urna eu arcu. Aliquam erat volutpat. Suspendisse potenti. Morbi mattis felis at nunc. Duis viverra diam non justo. In nisl. Nullam sit amet magna in magna.", image: "assets/images/articles4.jpg" },
-        { id: 6, type: "Mari Cassas", title: "Aenean placerat. In vulputate urna eu arcu. Aliquam erat volutpat. Suspendisse potenti. Morbi mattis felis at nunc. Duis viverra diam non justo. In nisl. Nullam sit amet magna in magna.", image: "assets/images/articles1.jpg" },
-        { id: 7, type: "PATIENT SAYS", title: "Aenean placerat. In vulputate urna eu arcu. Aliquam erat volutpat. Suspendisse potenti. Morbi mattis felis at nunc. Duis viverra diam non justo. In nisl. Nullam sit amet magna in magna.", image: "assets/images/articles2.jpg" },
-        { id: 8, type: "PATIENT SAYS", title: "Aenean placerat. In vulputate urna eu arcu. Aliquam erat volutpat. Suspendisse potenti. Morbi mattis felis at nunc. Duis viverra diam non justo. In nisl. Nullam sit amet magna in magna.", image: "assets/images/articles1.jpg" },
+        { id: 1,  image: "assets/images/RUS0.bmp" },
+        { id: 2,  image: "assets/images/RUS1.bmp" },
+        { id: 3,  image: "assets/images/RUS2.bmp" },
+        { id: 4,  image: "assets/images/RUS3.bmp" },
+        { id: 5,  image: "assets/images/RUS4.bmp" },
+        { id: 6,  image: "assets/images/RUS5.bmp" },
+        { id: 7,  image: "assets/images/RUS6.bmp" },
+      
     ]
     
     constructor() { }

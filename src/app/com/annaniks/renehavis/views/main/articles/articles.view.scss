@@ -6,48 +6,137 @@
     .articles_content {
         width: 75%;
         margin: 60px auto;
+    }
 
-        .articles_item {
-            width: 100%;
+    .tab {
+        width: 100%;
+        margin: auto;
+
+        .tab_content {
+
+            width: 75%;
             display: flex;
             flex-wrap: wrap;
+            margin: auto;
 
-            .item {
-                width: 33.33333%;
-            
-            
-              .item_content{
-                margin: 1.2em;
-                padding: 1.2em;
-                box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.23);
-              
+            .tab_item {
+                width: 50%;
+                background: #e2e6e9;
+                align-items: center;
+                text-align: center;
+                border-radius: 5px;
                 cursor: pointer;
-                transition: .3s all ease-out;
-              
-                &:hover{
-                   transform: scale(1.01)
-                }
+                transition: all .5s ease-out;
+                color: #20262e;
+                font-size: 21px;
 
-                .type {
-                    @include text(15, #004969);
+                .tab_title {
                     font-weight: 700;
-                    margin: 20px;
+                    padding: 15px 20px;
+                    position: relative;
 
+                    &::after {
+                        content: "";
+                        bottom: -68px;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                        position: absolute;
+                        line-height: 0;
+                        box-sizing: border-box;
+                        width: 0;
+                        height: 0;
+                        border-left: 15px solid transparent;
+                        border-right: 15px solid transparent;
+                        border-top: 15px solid #e2e6e9;
+                        z-index: 1;
+                        transition: all .5s ease-out;
+                    }
 
-                }
-
-                .articles_image {
-                    height: 300px;
-                    width: 100%;
-                }
-
-                .text {
-                    @include text(14px, #3b3b3b);
-                    font-weight: 700;
-                    margin: 20px 0;
                 }
             }
         }
+
+        .original_description {
+            display: flex;
+            margin: 50px auto;
+            justify-content: space-between;
+
+            .original_description_rigt_item {
+                width: 50%;
+
+                .right_item {
+                    width: 90%;
+
+                    .right_item_image {
+                        width: 100%;
+                        margin: 20px 0;
+
+                    }
+                }
+
+            }
+
+            .original_description_left_item {
+                width: 50%;
+
+                .left_item {
+                    width: 100%;
+
+                    .left_item_image {
+                        width: 100%;
+                        margin: 20px 0;
+
+                    }
+                }
+            }
+        }
+
+        .rus_description {
+            margin: 50px auto;
+
+            .descriprion_item {
+                width: 100%;
+                margin: 20px 0;
+
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 100%;
+                    background: linear-gradient(0.25turn, #a313c7, #1894ce, #d41e1e, #005984);
+                    margin: 50px 0;
+                    height: 5px;
+                }
+
+                .rus_image {
+                    width: 100%;
+                }
+            }
+
+        }
+
+        .download {
+
+            .download_image {
+                height: 50px;
+                width: 50px;
+                cursor: pointer;
+            }
+
+          
+        }
     }
 }
+
+.activTab {
+    background: #005984 !important;
+    color: #ffffff !important;
+
+    .tab_title {
+        &::after {
+            border-top: 15px solid #005984 !important;
+        }
+    }
+
 }

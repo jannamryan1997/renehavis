@@ -20,8 +20,6 @@ export interface SlidesText {
 
 export class ArticlesItem {
     id: number;
-    type: string;
-    title: string;
     image: string;
 }
 export class AboutItem {
