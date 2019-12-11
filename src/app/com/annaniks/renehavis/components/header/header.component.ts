@@ -15,7 +15,7 @@ export class HeaderComponent implements OnInit {
         { link: "Аптеки", scroll: 0, router: "/main/pharmacies" },
         { link: "Полезные статьи", scroll: 0, router: "/main/articles" },
         { link: "Инструкция", scroll: 10, router: "/main/instruction" },
-        { link: "Врачам/пациентам", scroll: 340, router: "/main/doctors" },
+        // { link: "Врачам/пациентам", scroll: 340, router: "/main/doctors" },
         { link: "Контакты", scroll: 340, router: "/main/contacts" },
     ]
 

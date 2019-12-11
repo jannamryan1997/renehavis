@@ -54,6 +54,8 @@
             }
         }
         .pharmacies_top{
+            width: 100%;
+            margin: auto;
             .text{
                 @include text(30px,#237D26);
                 font-weight: 700;
@@ -65,17 +67,20 @@
         .pharmacies_top_content{
             margin: 40px auto;
             display: flex;
-              align-items: center;
-              width: 60%;
+            align-items: center;
+            text-align: center;
+            width: 60%;
             .pharmacies_image{
                 height: 150px;
                 width: 150px;
+                margin: auto;
               
             }
             .text_item{
                 @include text(30px,#4a5666);
                 font-weight: 700;
-                margin-left: 60px;
+                // margin-left: 40px;
+                margin: auto;
               
                 
             }

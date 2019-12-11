@@ -169,45 +169,20 @@
                 @include text(16px, #6e7682);
                 font-weight: 300;
                 line-height: 36px;
-                padding-left: 40px;
-                padding-right: 40px;
+                // padding-left: 40px;
+                // padding-right: 40px;
                 margin: 35px 0;
                 position: relative;
-
-                &::before {
-                    top: 0;
-                    left: 0;
-                    content: "";
-                    position: absolute;
-                    box-sizing: border-box;
-                    border-left: 8px solid transparent;
-                    border-right: 8px solid transparent;
-                    border-top: 8px solid #005984;
-                    transition: all .5s ease-out;
-                }
-
-                &::after {
-                    bottom: 0;
-                    right: 0;
-                    content: "";
-                    position: absolute;
-                    box-sizing: border-box;
-                    border-left: 8px solid transparent;
-                    border-right: 8px solid transparent;
-                    border-bottom: 8px solid #005984;
-                    transition: all .5s ease-out;
-                }
 
             }
 
             .title_name {
                 @include text(16px, #005984);
-                padding: 0 40px;
             }
 
             .title_profession {
                 @include text(14px, #6f7883);
-                padding: 15px 40px;
+                padding: 15px 0px;
             }
         }
     }

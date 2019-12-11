@@ -34,10 +34,10 @@
 <section class="professionals_section">
 <div class="professionals_content">
     <div class="professionals_item_image" >
-        <img class="image professionals_image"  *ngFor="let item of slides;let ind=index" src="{{item.img}}" [ngClass]="{'display':currentSlide==ind}">
+        <img class="image professionals_image"  *ngFor="let item of mainSlider;let ind=index" src="{{item.img}}" [ngClass]="{'display':currentSlide==ind}">
     </div>
     <div class="slick-carousel">
-        <p class="type">PATIENT SAYS</p>
+        <!-- <p class="type">PATIENT SAYS</p> -->
         <ngx-slick-carousel class="carousel"  [config]="slideConfig2"   (afterChange)="afterChange($event)">
             <div ngxSlickItem *ngFor="let item of slidesText" class="slide">
               <p class="title">{{item.title}}</p>

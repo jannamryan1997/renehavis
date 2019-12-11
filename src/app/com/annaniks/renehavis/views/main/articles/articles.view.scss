@@ -59,47 +59,14 @@
         }
 
         .original_description {
-            display: flex;
-            margin: 50px auto;
-            justify-content: space-between;
-
-            .original_description_rigt_item {
-                width: 50%;
-
-                .right_item {
-                    width: 90%;
-
-                    .right_item_image {
-                        width: 100%;
-                        margin: 20px 0;
-
-                    }
-                }
-
-            }
-
-            .original_description_left_item {
-                width: 50%;
-
-                .left_item {
-                    width: 100%;
-
-                    .left_item_image {
-                        width: 100%;
-                        margin: 20px 0;
-
-                    }
-                }
-            }
-        }
-
-        .rus_description {
             margin: 50px auto;
 
-            .descriprion_item {
-                width: 100%;
+            .original_description_item {
                 margin: 20px 0;
-
+                .original_image{
+                    width: 100%;
+                
+                }
                 &::after {
                     content: "";
                     display: block;
@@ -108,23 +75,31 @@
                     margin: 50px 0;
                     height: 5px;
                 }
-
-                .rus_image {
-                    width: 100%;
-                }
             }
-
         }
 
-        .download {
 
-            .download_image {
-                height: 50px;
-                width: 50px;
-                cursor: pointer;
+
+        .rus_description {
+            margin: 50px auto;
+
+            .descriprion_item {
+                width: 100%;
+                margin: 20px 0;
+                .descriprion_image{
+                    width: 100%;
+                }
+                .title{
+                    @include text(25px, #20262e);
+                    font-weight: 700;
+                    padding: 10px 0;
+                }
+                .text{
+                    @include text(21px, #20262e);
+                }
+
             }
 
-          
         }
     }
 }

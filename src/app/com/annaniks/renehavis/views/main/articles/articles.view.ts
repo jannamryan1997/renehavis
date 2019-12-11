@@ -12,6 +12,14 @@ import { ArticlesService } from './articles.service';
 export class ArticlesaView implements OnInit {
 
     public articlesItem: ArticlesItem[];
+    public originalItem = [
+        { image: "assets/images/org0.jpg" },
+        { image: "assets/images/org1.jpg" },
+        { image: "assets/images/org2.jpg" },
+        { image: "assets/images/org3.jpg" },
+        { image: "assets/images/org4.jpg" },
+        { image: "assets/images/org5.jpg" },
+    ]
     public tab: number = 1;
 
     constructor(private _router: Router, private _articlesService: ArticlesService) { }
@@ -37,7 +45,7 @@ export class ArticlesaView implements OnInit {
         if (this.tab == 1) {
             return '/assets/files/renehav.pdf'
         }
-        else{
+        else {
             return '/assets/files/renehav.docx'
         }
     }

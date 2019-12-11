@@ -10,11 +10,11 @@ import { ServiceTabItem, SlidesText, Slides } from '../../../models/models';
 export class HomeView implements OnInit {
     public currentSlide: number = 0;
     public serviceTabItem: ServiceTabItem[] = [
-        {router: "/main/about-product" , image: "assets/images/md4.png", title: "О  продукте", type: "Предназначен для облегчения симптомов остеоартрита коленного суставаобеспечивая смазывающими и амортизирующими свойствами синовиальноепространство сустава." },
+        {router: "/main/about-product" , image: "assets/images/md4.png", title: "О  продукте", type: "Инновационный препарат гиалуроновой кислоты премиум класса.Идеально физиологически сбалансированная гиалуроновая кислота с безупречным профилем безопасности от Швейцарской компанией MDT Int’l SA" },
         { router: "/main/pharmacies",image: "assets/images/md3.png", title: "Аптеки", type: "Здесь вы можете найти список аптек где можно купить препарат" },
         { router: "/main/instruction" ,image: "assets/images/md2.png", title: "Инструкция", type: "Инъекция RenehaVis (РенехаВис) должна проводиться только врачом- профессионалом, прошедшим обучение технике введения препарата." },
-        // { image: "assets/images/md5.png", title: "ПОЛЕЗНЫЕ СТАТЬИ", type: "ПОЛЕЗНЫЕ СТАТЬИ НА ТЕМУ:'ЭФФЕКТИВНОЕ СРЕДСТВО ЛЕЧЕНИЯ СУСТАВОВ'" },
-        { router: "/main/doctors",image: "assets/images/md1.png", title: "Врачам/пациентам", type: "Остеоартроз — наиболее частое заболевание опорно-двигательного аппарата, которым страдает около 10 % жителей развитых стран мира" },
+        { image: "assets/images/md5.png", title: "ПОЛЕЗНЫЕ СТАТЬИ", type: "ПОЛЕЗНЫЕ СТАТЬИ НА ТЕМУ:'ЭФФЕКТИВНОЕ СРЕДСТВО ЛЕЧЕНИЯ СУСТАВОВ'" },
+        // { router: "/main/doctors",image: "assets/images/md1.png", title: "Врачам/пациентам", type: "Остеоартроз — наиболее частое заболевание опорно-двигательного аппарата, которым страдает около 10 % жителей развитых стран мира" },
         {router: "/main/contacts", image: "assets/images/md6.png", title: "Контакты", type: "Если возникнут вопросы можете связаться с нами и найти нас в Instagram" },
     ]
 
@@ -28,13 +28,14 @@ export class HomeView implements OnInit {
 
     ];
 
+    public mainSlider:Slides[]=[
+        {img:"assets/images/slid1.jpg"}
+    ]
+
     public slidesText: SlidesText[] =
         [
-            { name: "Richared Thomas", profession: "Richared Thomas", title: "Aenean placerat. In vulputate urna eu arcu. Aliquam erat volutpat. Suspendisse potenti. Morbi mattis felis at nunc. Duis viverra diam non justo. In nisl. Nullam sit amet magna in magna." },
-            { name: "Richared Thomas", profession: "Richared Thomas", title: "In sem justo, commodo ut, suscipit at, pharetra vitae, orci. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames." },
-            { name: "Richared Thomas", profession: "Richared Thomas", title: "Aenean placerat. In vulputate urna eu arcu. Aliquam erat volutpat. Suspendisse potenti. Morbi mattis felis at nunc. Duis viverra diam non justo. In nisl. Nullam sit amet magna in magna." },
-            { name: "Richared Thomas", profession: "Richared Thomas", title: "In sem justo, commodo ut, suscipit at, pharetra vitae, orci. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames." },
-            { name: "Richared Thomas", profession: "Richared Thomas", title: "In sem justo, commodo ut, suscipit at, pharetra vitae, orci. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames." }
+            { name: "МЕЖДУНАРОДНЫЙ КОНГРЕСС ДЛЯ ТРАВМАТОЛОГОВ-ОРТОПЕДОВ АРТРОМОСТ 2019.", profession: "30 Ноября Москва, отель Балчуг", title: "«Артромост» это научно-практический проект, созданный известными практикующими врачами ортопедами России с целью обмена опытом диагностики и лечения в сфере травматологии-ортопедии и спортивной медицины." },
+         
         ]
     public slideConfig = {
         slidesToShow: 1,
