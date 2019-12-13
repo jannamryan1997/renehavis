@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
-import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
-import { filter } from 'rxjs/operators';
+
+import { Meta } from '@angular/platform-browser';
 
 @Component({
     selector: "main-view",
@@ -16,7 +16,7 @@ export class MainView implements OnInit {
         { image: "assets/images/3.jpg" },
     ]
 
-    constructor() { }
+    constructor(private meta: Meta) { }
 
     ngOnInit() {
        

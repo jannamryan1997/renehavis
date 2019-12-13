@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { Title, Meta } from '@angular/platform-browser';
 
 declare var google;
 
@@ -17,7 +18,10 @@ export class ContactsView implements OnInit {
         ['Bondi Beach', 55.6344682, 37.4356179],
       ];
 
-    constructor() { }
+    constructor(private _title:Title,private _meta:Meta) { 
+        this._title.setTitle('Контакты ООО"Фармакол" Офис продаж +7 (495) 532 67 68 info@РЕНЕХАВИС.РФ');
+        this._meta.addTag({name:"description",content:"КОНТАКТНАЯ ИНФОРМАЦИЯ ООО 'Фармакол', 108811, ГОРОД МОСКВА, КИЛОМЕТР КИЕВСКОЕ ШОССЕ 22-Й (П МОСКОВСКИЙ), ДОМОВЛАД. 4 СТР 5 КОРП Е, БЛОК 502Е ЭТ 5 ОФ 18"})
+    }
 
     ngOnInit() {
         this._initMap();

@@ -2,6 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { Router } from '@angular/router';
 import { ArticlesItem } from '../../../models/models';
 import { ArticlesService } from './articles.service';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
     selector: "articles-view",
@@ -22,7 +23,10 @@ export class ArticlesaView implements OnInit {
     ]
     public tab: number = 1;
 
-    constructor(private _router: Router, private _articlesService: ArticlesService) { }
+    constructor(private _router: Router, private _articlesService: ArticlesService,private _title:Title,private _meta:Meta) { 
+        this._title.setTitle('Полезные статьи');
+        this._meta.addTag({name:"description",title:""});
+    }
 
     ngOnInit() {
         this._getArticlesItem();

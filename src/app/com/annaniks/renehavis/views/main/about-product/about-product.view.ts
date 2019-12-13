@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { AboutItem, DescriptionItem } from '../../../models/models';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
     selector: "about-product-view",
@@ -25,7 +26,10 @@ export class AboutProductView implements OnInit {
         { color:"#940cfe",link: "Камера 1 > ", title: "Гиалуронат натрия Низкомолекулярный (LMW):0.7ml стерильного 2.2% раствора гиалуроната натрия молекулярный вес 1х106 Дальтон (Da)." },
         { color:"#00CF91",link: "Камера 2 > ", title: "Гиалуронат натрия Высокомолекулярный (HMW): 0.7ml стерильного 1.0% раствора гиалуроната натрия молекулярный вес 2 х106 Дальтон (Da)." }
     ]
-    constructor() { }
+    constructor(private _title:Title,private _meta: Meta) { 
+     this._title.setTitle("Купить Ренехавис в Москве");
+     this._meta.addTag({ name: 'description', content: 'РенехаВис протез синов. жидк. 2,2% 0,7мл + 1% 0,7мл №1, можно купить по самым низким в сети аптек Столички' });
+    }
 
     ngOnInit() { }
 }
