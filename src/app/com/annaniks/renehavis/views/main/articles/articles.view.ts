@@ -12,7 +12,6 @@ import { Title, Meta } from '@angular/platform-browser';
 
 export class ArticlesaView implements OnInit {
 
-    public articlesItem: ArticlesItem[];
     public originalItem = [
         { image: "assets/images/org0.jpg" },
         { image: "assets/images/org1.jpg" },
@@ -20,6 +19,13 @@ export class ArticlesaView implements OnInit {
         { image: "assets/images/org3.jpg" },
         { image: "assets/images/org4.jpg" },
         { image: "assets/images/org5.jpg" },
+    ]
+
+    public articlesItem=[
+        {title:"text 1dsdsdsdsdsd",text:"111111111fdfsdfsdfsdfsdfsdfs"},
+        {title:"text 2dsdsdsdsdsd",text:"22222222222fdfsdfsdfsdfsdfsdfs"},
+        {title:"text 3dsdsdsdsdsd",text:"333333333333fdfsdfsdfsdfsdfsdfs"},
+
     ]
     public tab: number = 1;
 
@@ -29,31 +35,12 @@ export class ArticlesaView implements OnInit {
     }
 
     ngOnInit() {
-        this._getArticlesItem();
-    }
-
-    private _getArticlesItem(): void {
-        this.articlesItem = this._articlesService.articlesItem;
-    }
-    public openArticlesItemPage(id): void {
-        this._router.navigate(['/main/articles', id])
-    }
-
-    public changeTab(tab): void {
-        this.tab = tab;
-        console.log(this.tab);
 
     }
 
-    public openFile(): string {
-        if (this.tab == 1) {
-            return '/assets/files/renehav.pdf'
-        }
-        else {
-            return '/assets/files/renehav.docx'
-        }
+
     }
-}
+
 
 
 

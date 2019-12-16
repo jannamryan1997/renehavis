@@ -136,12 +136,17 @@
 .professionals_section {
     width: 75%;
     margin: auto;
-
+    .text{
+        @include text(40px,#8993a1);
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
     .professionals_content {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+       
 
         .professionals_item_image {
             width: 50%;
@@ -169,9 +174,7 @@
                 @include text(16px, #6e7682);
                 font-weight: 300;
                 line-height: 36px;
-                // padding-left: 40px;
-                // padding-right: 40px;
-                margin: 35px 0;
+                margin-bottom: 35px 0;
                 position: relative;
 
             }

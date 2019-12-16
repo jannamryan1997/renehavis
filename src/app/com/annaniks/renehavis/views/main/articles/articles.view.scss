@@ -6,112 +6,28 @@
     .articles_content {
         width: 75%;
         margin: 60px auto;
-    }
 
-    .tab {
-        width: 100%;
-        margin: auto;
-
-        .tab_content {
-
-            width: 75%;
-            display: flex;
-            flex-wrap: wrap;
-            margin: auto;
-
-            .tab_item {
-                width: 50%;
-                background: #e2e6e9;
-                align-items: center;
-                text-align: center;
-                border-radius: 5px;
-                cursor: pointer;
-                transition: all .5s ease-out;
-                color: #20262e;
-                font-size: 21px;
-
-                .tab_title {
-                    font-weight: 700;
-                    padding: 15px 20px;
-                    position: relative;
-
-                    &::after {
-                        content: "";
-                        bottom: -68px;
-                        top: 0;
-                        left: 0;
-                        right: 0;
-                        margin: auto;
-                        position: absolute;
-                        line-height: 0;
-                        box-sizing: border-box;
-                        width: 0;
-                        height: 0;
-                        border-left: 15px solid transparent;
-                        border-right: 15px solid transparent;
-                        border-top: 15px solid #e2e6e9;
-                        z-index: 1;
-                        transition: all .5s ease-out;
-                    }
-
-                }
-            }
+        .articles_image {
+            width: 100%;
+            margin-bottom: 20px;
         }
-
-        .original_description {
-            margin: 50px auto;
-
-            .original_description_item {
-                margin: 20px 0;
-                .original_image{
-                    width: 100%;
-                
-                }
-                &::after {
-                    content: "";
-                    display: block;
-                    width: 100%;
-                    background: linear-gradient(0.25turn, #a313c7, #1894ce, #d41e1e, #005984);
-                    margin: 50px 0;
-                    height: 5px;
-                }
-            }
-        }
-
-
-
-        .rus_description {
-            margin: 50px auto;
-
-            .descriprion_item {
+        
+        .descriprion_item {
+            width: 100%;
+            margin: 20px 0;
+            .descriprion_image{
                 width: 100%;
-                margin: 20px 0;
-                .descriprion_image{
-                    width: 100%;
-                }
-                .title{
-                    @include text(25px, #20262e);
-                    font-weight: 700;
-                    padding: 10px 0;
-                }
-                .text{
-                    @include text(21px, #20262e);
-                }
-
+            }
+            .title{
+                @include text(25px, #20262e);
+                font-weight: 700;
+                padding: 10px 0;
+            }
+            .text{
+                @include text(21px, #20262e);
             }
 
         }
+
     }
-}
-
-.activTab {
-    background: #005984 !important;
-    color: #ffffff !important;
-
-    .tab_title {
-        &::after {
-            border-top: 15px solid #005984 !important;
-        }
-    }
-
 }
