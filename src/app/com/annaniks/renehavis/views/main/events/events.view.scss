@@ -1,0 +1,52 @@
+@import "../../../../../../../assets/mixin";
+
+.events_container {
+    width: 75%;
+    margin: 50px auto;
+  .text{
+    @include text(20px,#005984);
+    padding: 30px 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+  
+  }
+  .app-event-item{
+      width: 75%;
+      margin: auto;
+      align-items: center;
+      text-align: center;
+      .events_image{
+          width: 100%;
+          height: 500px;
+          padding: 20px;
+      }
+
+  }
+  .event_item_description{
+      margin: 30px 0;
+      width:75%;
+      align-items: center;
+      text-align: center;
+      margin: auto;
+       .slick-carousel {
+        .carousel {
+            width: 100%;
+            .carousel_image {
+                width: 100%;
+                transition: opacity 500ms linear 0s;
+                height: 400px;
+            }
+        }
+       }
+       .vidyo_content{
+           margin: 80px 0;
+           display: flex;
+           justify-content: space-between;
+           .vidyo_item{
+               width: 50%;
+               height: 200px;
+               padding:1.2em;
+           }
+       }
+  }
+}

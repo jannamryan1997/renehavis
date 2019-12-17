@@ -1,6 +1,5 @@
 export interface MenuItem {
     link: string,
-    scroll: number;
     router: string;
 
 }

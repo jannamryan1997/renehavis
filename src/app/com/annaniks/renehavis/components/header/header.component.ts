@@ -11,12 +11,14 @@ export class HeaderComponent implements OnInit {
 
     @ViewChild('navbar') private _navbarElement: ElementRef;
     public navItem: MenuItem[] = [
-        { link: "О Продукте", scroll: 0, router: "/main/about-product" },
-        { link: "Аптеки", scroll: 0, router: "/main/pharmacies" },
-        { link: "Полезные статьи", scroll: 0, router: "/main/articles" },
-        { link: "Инструкция", scroll: 10, router: "/main/instruction" },
+        { link: "О Продукте",  router: "/main/about-product" },
+        { link: "Аптеки", router: "/main/pharmacies" },
+        { link: "МЕРОПРИЯТИЯ", router: "/main/events" },
+        { link: "Полезные статьи",  router: "/main/articles" },
+        { link: "Инструкция", router: "/main/instruction" },
         // { link: "Врачам/пациентам", scroll: 340, router: "/main/doctors" },
-        { link: "Контакты", scroll: 340, router: "/main/contacts" },
+        { link: "Контакты",  router: "/main/contacts" },
+ 
     ]
 
     constructor() { }

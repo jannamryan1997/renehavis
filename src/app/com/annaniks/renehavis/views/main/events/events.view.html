@@ -1,0 +1,45 @@
+<section class="events_section">
+    <app-banner [text]="'Мероприятия'"></app-banner>
+    <div class="events_container">
+        <app-event-item [title]="'МЕЖДУНАРОДНЫЙ КОНГРЕСС ДЛЯ ТРАВМАТОЛОГОВ-ОРТОПЕДОВ АРТРОМОСТ 2019.'">
+            <div class="app-event-item">
+                <p class="text">30 Ноября Москва, отель Балчуг</p>
+                <img class="image events_image" src="assets/images/slid1.jpg">
+            </div>
+
+        </app-event-item>
+        <app-event-item
+            [title]="'РЕГИОНАЛЬНЫЕ ПРАКТИЧЕСКИЕ ШКОЛЫ ТРАВМАТОЛОГОВ-ОРТОПЕДОВ Методы экстракорпоральной ударно-волновой терапии в травматологии и ортопедии'">
+            <div class="event_item_description">
+                <p class="text">11 декабря - 12 декабря 2019 Москва (УВТ), ФГБУ «НМИЦ ТО им. Н.Н. Приорова» Минздрава
+                    России, Новоспасский пер.,9</p>
+                <div class="slick-carousel">
+                    <ngx-slick-carousel class="carousel" [config]="slideConfig">
+                        <div ngxSlickItem class="slide">
+                            <img class="image carousel_image" src="assets/images/eventsl2.jpg" alt="" width="100%">
+                        </div>
+                        <div ngxSlickItem class="slide">
+
+                            <img class="image carousel_image" src="assets/images/eventsl1.jpg" alt="" width="100%">
+                        </div>
+                        <div ngxSlickItem class="slide">
+                            <img class="image carousel_image" src="assets/images/eventsl3.jpg" alt="" width="100%">
+                        </div>
+                        <div ngxSlickItem class="slide">
+                            <img class="image carousel_image" src="assets/images/eventsl4.jpg" alt="" width="100%">
+
+                        </div>
+                    </ngx-slick-carousel>
+                </div>
+                <div class="vidyo_content">
+                    <video class="vidyo_item" controls>
+                        <source src="assets/images/vidyo1.mp4">
+                    </video>
+                    <video class="vidyo_item" controls>
+                        <source src="assets/images/vidyo2.mp4">
+                    </video>
+                </div>
+            </div>
+        </app-event-item>
+    </div>
+</section>

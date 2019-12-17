@@ -1,0 +1,19 @@
+@import "../../../../../../assets/mixin";
+
+.title {
+    @include text(20px,#005984);
+    padding: 10px 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: underline;
+    &::before {
+        content: "";
+        display: inline-block;
+        border-radius: 50%;
+        width: 8px;
+        height: 8px;
+        background-color: #005984;
+        margin-right: 10px;
+    }
+}

@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from "@angular/core";
 import { ServiceTabItem, SlidesText, Slides } from '../../../models/models';
 import { Title, Meta } from '@angular/platform-browser';
-
+          
 @Component({
     selector: "app-home",
     templateUrl: "home.view.html",
@@ -58,7 +58,7 @@ export class HomeView implements OnInit {
         speed: 300,
         loop: true,
         autoplay: true,
-        autoplayTimeout: 1000,
+        autoplayTimeout: 100,
         autoplayHoverPause: true
     }
 
