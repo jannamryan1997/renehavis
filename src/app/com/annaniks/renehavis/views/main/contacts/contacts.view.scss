@@ -37,7 +37,8 @@
                         &:hover {
                             color: #005984;
                         }
-                        i{
+
+                        i {
                             margin-right: 10px;
                         }
                     }
@@ -56,17 +57,20 @@
 
                 .registration_list {
                     width: 30%;
-                    .text{
-                    @include text(21px, #20262e);
-                    margin-bottom: 15px;
-                    font-weight: 700;
-                    text-transform: uppercase;
+
+                    .text {
+                        @include text(21px, #20262e);
+                        margin-bottom: 15px;
+                        font-weight: 700;
+                        text-transform: uppercase;
                     }
+
                     .list_item {
                         display: flex;
 
                         .image {
                             width: 25px;
+                            height: 25px;
                             margin-right: 10px;
                         }
 
@@ -78,5 +82,42 @@
                 }
             }
         }
+    }
+}
+
+@media only screen and (max-width:1400px) {
+    .contact_item {
+        display: block !important;
+
+        .list {
+            width: 100% !important;
+        }
+    }
+}
+
+@media only screen and (max-width:1100px) {
+    .list {
+        display: block !important;
+
+        .last {
+            margin: 20px 0 !important;
+        }
+    }
+
+    .registration_list {
+        width: 100% !important;
+    }
+
+    #map {
+        height: 300px;
+    }
+
+}
+@media only screen and (max-width:500px) {
+    #map {
+        height: 200px !important ;
+    }
+    .menu,.last{
+        width: 100% !important;
     }
 }

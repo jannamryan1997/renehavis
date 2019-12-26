@@ -102,3 +102,72 @@
     font-family: 'Roboto', sans-serif;
     
 }
+
+@media only screen and (max-width:1400px){
+    #map {
+        height: 300px;
+}
+.link{
+    font-size: 15px !important;
+}
+.text,.text_item{
+    font-size: 25px !important;
+}
+
+.pharmacies_image{
+width: 130px;
+height: 130px;
+}
+.image{
+    height: 150px !important;
+}
+}
+
+@media only screen and (max-width:1100px){
+.pharmacies_content{
+    display: block !important;
+    .pharmacies_right_content{
+        width: 100% !important;
+    }
+    .pharmacies_left_content{
+        width: 100% !important;
+        .phermotion_left_item{
+            margin: 30px 0 !important;
+            width: 100% !important;
+            .image{
+                display: none !important;
+            }
+        }
+     
+    }
+
+}
+.pharmacies_top_content{
+    width: 100% !important;
+.text,.text_item{
+    font-size: 15px !important;
+}
+
+.pharmacies_image{
+width: 80px;
+height:80px;
+}
+}
+}
+
+@media only screen and (max-width:500px) {
+    #map {
+        height: 300px !important;
+}
+.pharmacies_top_content{
+    display: block !important;
+    align-items: center !important;
+    .pharmacies_image{
+        width: 50px;
+        height:50px;
+        }
+        .text_item{
+            margin-top: 20px  !important;
+        }
+}
+}

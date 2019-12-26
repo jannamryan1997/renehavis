@@ -130,7 +130,7 @@
 
 
 
-li:last-child {
+li:last-child {                    
     .radius::after {
         content: none !important;
     }
@@ -177,4 +177,49 @@ li:nth-child(5) {
         margin-top: 30px;
     }
 
+}
+
+@media only screen and (max-width:1400px){
+    .link_item{
+        .link{
+            font-size: 20px !important;
+        }
+        .title{
+            font-size: 15px !important; 
+        }
+    }
+}
+
+@media only screen and (max-width:1100px){
+    .product_description{
+        font-size: 15px !important;
+    }
+    .about_content{
+        display: block !important;
+    }
+    .about_left_content{
+        width: 100% !important;
+    }
+    .about_right_content{
+        width: 100% !important;
+        margin-top: 30px !important;
+        .type{
+            font-size: 20px !important;
+        }
+      
+    }
+    .radius{
+        &::after {
+            content: none !important;
+        }
+    }
+    .link_item{
+        .link{
+            font-size: 15px !important;
+        }
+        .title{
+            font-size: 12px !important; 
+        }
+    }
+   
 }

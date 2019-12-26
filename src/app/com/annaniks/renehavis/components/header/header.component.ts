@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild, ElementRef } from "@angular/core";
 import { MenuItem } from '../../models/models';
+import { MenuService } from '../../service/menu.service';
 
 @Component({
     selector: "app-header",
@@ -11,17 +12,16 @@ export class HeaderComponent implements OnInit {
 
     @ViewChild('navbar') private _navbarElement: ElementRef;
     public navItem: MenuItem[] = [
-        { link: "О Продукте",  router: "/main/about-product" },
-        { link: "Аптеки", router: "/main/pharmacies" },
-        { link: "МЕРОПРИЯТИЯ", router: "/main/events" },
-        { link: "Полезные статьи",  router: "/main/articles" },
-        { link: "Инструкция", router: "/main/instruction" },
-        // { link: "Врачам/пациентам", scroll: 340, router: "/main/doctors" },
-        { link: "Контакты",  router: "/main/contacts" },
+        { link: "О Продукте",  router: "/about-product" },
+        { link: "Аптеки", router: "/pharmacies" },
+        { link: "МЕРОПРИЯТИЯ", router: "/events" },
+        { link: "Полезные статьи",  router: "/articles" },
+        { link: "Инструкция", router: "/instruction" },
+        { link: "Контакты",  router: "/contacts" },
  
     ]
 
-    constructor() { }
+    constructor(private _menuService:MenuService) { }
 
     ngOnInit() {
         this._handleScrollPositionChange();
@@ -43,6 +43,9 @@ export class HeaderComponent implements OnInit {
         console.log(window.scrollY);
 
 
+    }
+    public openMenu() {
+        this._menuService.openLeftMenu();
     }
 
 }

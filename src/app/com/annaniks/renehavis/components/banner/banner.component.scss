@@ -2,21 +2,20 @@
 .banner_section{
     width: 100%;
     .banner_content{
-        position: relative;
-        display: flex;
         align-items: center;
-        .banner_image{
-            width: 100%;
-            height: 350px;
-          
-          }
-          .text_item{
-            position: absolute;
-            margin: 0 125px;
+        background-image: url("/assets/images/banner.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        display: flex;
+        .text_content{
+          margin-left: 30px;
+        
           .type{
               @include text(40px,#4a5666);
               font-weight: 700;
-              margin-bottom: 20px
+              margin-bottom: 20px;
           
             }
             .title{
@@ -29,6 +28,26 @@
                 display: inline-block;
                 font-weight: 700;
             }
-          }
-    }
+    
+    }}
+}
+
+
+@media only screen and (max-width:1100px){
+  .banner_content{
+    height: 250px !important;
+  }
+  .type{
+    font-size: 25px !important;
+  }
+
+}
+
+@media only screen and (max-width:500px) {
+  .type{
+    font-size: 18px !important;
+  }
+  .banner_content{
+    height: 120px !important;
+  }
 }

@@ -1,17 +1,9 @@
 <section class="home_section">
-    <ngx-slick-carousel class="carousel"  [config]="slideConfig" >
-        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-            <img class="image carousel_image" src="{{ slide.img }}" alt="" width="100%">
-        </div>
-    </ngx-slick-carousel> 
+  
+            <img class="image home_image" src="assets/images/home.jpg" alt="" width="100%">
 </section>
 <section class="services_section">
     <div class="tab">
-        <!-- <div class="service_tab">
-            <div class="service_tab_item">
-                <p class="title">our services</p>
-            </div>
-        </div> -->
         <div class="service_tab_section">
             <div class="service_tab_content">
                 <div class="service_tab_item">
@@ -39,7 +31,6 @@
         <img class="image professionals_image"  *ngFor="let item of mainSlider;let ind=index" src="{{item.img}}" [ngClass]="{'display':currentSlide==ind}">
     </div>
     <div class="slick-carousel">
-        <!-- <p class="type">PATIENT SAYS</p> -->
         <ngx-slick-carousel class="carousel"  [config]="slideConfig2"   (afterChange)="afterChange($event)">
             <div ngxSlickItem *ngFor="let item of slidesText" class="slide">
               <p class="title">{{item.title}}</p>

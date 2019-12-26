@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 
 import { Meta } from '@angular/platform-browser';
+import { MenuService } from '../../service/menu.service';
 
 @Component({
     selector: "main-view",
@@ -16,10 +17,12 @@ export class MainView implements OnInit {
         { image: "assets/images/3.jpg" },
     ]
 
-    constructor(private meta: Meta) { }
+    constructor(private meta: Meta,private _menuService:MenuService) { }
 
     ngOnInit() {
        
     }
-
+    onClickedOutside(e: Event) {
+        this._menuService._leftMenu=false;
+}
 }

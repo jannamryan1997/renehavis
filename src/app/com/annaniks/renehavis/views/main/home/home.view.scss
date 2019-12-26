@@ -3,19 +3,10 @@
 .home_section {
     width: 75%;
     margin: auto;
-
-    .carousel {
-        .carousel_image {
-            width: 100%;
-            transition: opacity 500ms linear 0s;
-            height: 550px;
-        }
-    }
 }
 
 .services_section {
     width: 100%;
-    margin: 120px auto;
     &::after {
         content: "";
         display: block;
@@ -82,9 +73,10 @@
                     flex-wrap: wrap;
 
                     .item {
-                        width: 29%;
-                        padding: 1.2em;
+                        width: 33.3333%;
+                        margin: 20px 0;
                         display: flex;
+
 
                         .service_image {
                             height: 45px;
@@ -136,17 +128,19 @@
 .professionals_section {
     width: 75%;
     margin: auto;
-    .text{
-        @include text(40px,#8993a1);
+
+    .text {
+        @include text(40px, #8993a1);
         text-transform: uppercase;
         margin-bottom: 20px;
     }
+
     .professionals_content {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-       
+
 
         .professionals_item_image {
             width: 50%;
@@ -156,8 +150,8 @@
             .professionals_image {
                 width: 90%;
                 height: 380px;
-            display: none;
-           transition: all .5s ease-out;
+                display: none;
+                transition: all .5s ease-out;
             }
 
         }
@@ -192,5 +186,54 @@
 }
 
 .display {
- display: block !important;
+    display: block !important;
+}
+
+
+@media only screen and (max-width:1400px) {
+    .professionals_section {
+        .text {
+            font-size: 25px !important;
+        }
+    }
+
+    .service_tab_content {
+        .item {
+            width: 50% !important;
+        }
+    }
+
+    .title,
+    .title_name,
+    .title_profession {
+        font-size: 14px !important;
+    }
+}
+
+
+@media only screen and (max-width:1100px) {
+    .service_tab_content {
+        .item {
+            width: 100% !important;
+        }
+    }
+
+    .professionals_content {
+        display: block !important;
+
+        .professionals_item_image {
+            width: 100% !important;
+       margin-bottom: 30px !important;
+        }
+
+        .slick-carousel {
+            width: 100% !important;
+        }
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .professionals_image{
+        height: 250px !important;
+    }
 }

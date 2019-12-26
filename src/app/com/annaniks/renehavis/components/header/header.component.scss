@@ -4,6 +4,7 @@
     -moz-box-shadow: 11px 4px 17px -8px rgba(0, 0, 0, 0.75);
     box-shadow: 11px 4px 17px -8px rgba(0, 0, 0, 0.75);
     transition: all 0.5s;
+    display: flex;
 
     .navbar {
         display: flex;
@@ -37,7 +38,7 @@
                 font-weight: bold;
                 text-align: left;
                 color: #8993a1;
-                padding: 10px 25px;
+                padding: 10px 20px;
                 text-decoration: none;
                 cursor: pointer;
                 text-transform: uppercase;
@@ -60,6 +61,15 @@
         }
 
     }
+    .material_icon{
+        cursor: pointer;
+        padding: 20px 20px;
+        display: none;
+        i{
+            font-size: 45px;
+            color: #005984;
+        }
+    }
 }
 
 
@@ -74,4 +84,23 @@
  background: #ffffff;
     z-index: 999999;
     box-shadow: 11px 4px 17px -8px rgba(0, 0, 0, 0.75);
+}
+
+@media only screen and (max-width:1400px){
+.navbar{
+    width: 85% !important;
+    .main_nav_item_link{
+        padding: 10px 10px !important;
+    }
+}
+   
+}
+
+@media only screen and (max-width:1100px){
+    .nav_items{
+        display: none !important;
+    }
+    .material_icon{
+        display: block !important;
+    }
 }

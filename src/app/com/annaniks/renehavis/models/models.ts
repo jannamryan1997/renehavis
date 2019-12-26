@@ -1,6 +1,7 @@
 export interface MenuItem {
     link: string,
     router: string;
+    icon?:string;
 
 }
 

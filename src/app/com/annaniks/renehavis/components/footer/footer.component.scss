@@ -38,17 +38,49 @@
 
     .last {
         float: right;
-        margin-left: 100px;
+        margin-left: 80px;
     }
-    
- .social_media{
-     display: flex;
-     .social_image{
-         height: 50px;
-     }
-     .title{
-         margin: auto;
-     }
- }
+
+    .social_media {
+        display: flex;
+
+        .social_image {
+            height: 50px;
+        }
+
+        .title {
+            margin: auto;
+        }
+    }
+
+}
+
+@media only screen and (max-width:1100px) {
+    .footer_container {
+        display: block !important;
+    }
+
+    .menu {
+        float: none !important;
+    }
+
+    .last {
+        float: none !important;
+    }
+
+    .social_media {
+
+        .title {
+            margin: 20px !important;
+        }
+    }
+
+    .menu_item {
+        display: flex !important;
+    }
+
+    .subscrib {
+        margin: 30px 0 !important;
+    }
 
 }

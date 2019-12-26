@@ -1,30 +1,17 @@
-<!-- <div class="page_layout">
-    <div class="page_layout_content">
-         <section class="company_section">
-            <div class="company_container">
-                <p class="type">Сайт находится в стадии разработки</p>
-            </div>
-        </section>
-        <section class="contact_section">
-            <div class="contact_container">
-                <div class="contact_container_item">
-                    <div class="contact_item" *ngFor="let item of contactItem">
-                        <img class="image contact_image" src="{{item.image}}">
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-</div> -->
-
 <div class="page_layout">
     <div class="page_layout_content">
-        <div class="page_layout_container">
-                <app-header></app-header>
+        <div class="page_layout_container"  (clickOutside)="onClickedOutside($event)">
+            <app-header></app-header>
+      
+   
+            <app-navbar></app-navbar>
         </div>
-       
-        <div class="main_layout">
-            <router-outlet></router-outlet>
+        <div >
+        
+            <div class="main_layout">
+
+                <router-outlet></router-outlet>
+            </div>
         </div>
         <app-footer></app-footer>
     </div>
