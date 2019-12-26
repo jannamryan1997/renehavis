@@ -4,7 +4,7 @@ import { Injectable } from "@angular/core";
 
 export class MenuService {
     
-    public _leftMenu: boolean = true;
+    public _leftMenu: boolean = false;
     constructor() { }
 
  public openLeftMenu(): void {
