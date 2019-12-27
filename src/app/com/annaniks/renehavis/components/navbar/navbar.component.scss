@@ -55,6 +55,10 @@
 .activeRouter {
     .items {
         background: #005984 !important;
+     
+        .item_title{
+            color: #fff !important;
+        }
     }
 }
 
