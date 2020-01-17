@@ -1,15 +1,14 @@
 import { Component, OnInit, Input } from "@angular/core";
-import { ArticlesService } from '../articles.service';
-import { ArticlesItem } from '../../../../models/models';
+import { ArticlesService } from '../../articles.service';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
     selector: "articles-item-view",
-    templateUrl: "articles-item.view.html",
-    styleUrls: ["articles-item.view.scss"]
+    templateUrl: "articles-item.component.html",
+    styleUrls: ["articles-item.component.scss"]
 })
 
-export class ArticlesItemView implements OnInit {
+export class ArticlesItemComponent implements OnInit {
 
     @Input() title:string;
 
@@ -22,7 +21,6 @@ export class ArticlesItemView implements OnInit {
 
     public show(): void {
         this.showText =! this.showText;
-        console.log(this.showText);
         
     }
 }

@@ -4,10 +4,11 @@ import { ArticlesRouterModule } from './articles.routing.module';
 import { SharedModule } from '../../../shared/shared.module';
 import { ArticlesService } from './articles.service';
 import { SlicetextPipe } from '../../../pipe/slicetext.pipe';
-import { ArticlesItemView } from './articles-item/articles-item.view';
+import { ArticlesItemComponent } from './components/articles-item/articles-item.component';
+
 
 @NgModule({
-    declarations: [ArticlesaView,SlicetextPipe,ArticlesItemView],
+    declarations: [ArticlesaView,SlicetextPipe,ArticlesItemComponent],
     imports: [ArticlesRouterModule,SharedModule],
     providers:[ArticlesService]
 })
