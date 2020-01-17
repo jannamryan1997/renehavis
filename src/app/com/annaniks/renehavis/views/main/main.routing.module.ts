@@ -6,8 +6,8 @@ const mainRoutes: Routes = [
 
     {
         path: "", component: MainView, children: [
-            { path: "", redirectTo: "home", pathMatch: "full" },
-            { path: "home", loadChildren: "src/app/com/annaniks/renehavis/views/main/home/home.module#HomeModule" },
+            { path: "home", redirectTo: "/", pathMatch: "full" },
+            { path: "", loadChildren: "src/app/com/annaniks/renehavis/views/main/home/home.module#HomeModule" },
             { path: "contacts", loadChildren: "src/app/com/annaniks/renehavis/views/main/contacts/contacts.module#ContactsModule" },
             { path: "services", loadChildren: "src/app/com/annaniks/renehavis/views/main/services/services.module#ServicesModule" },
             { path: "about-product", loadChildren: "src/app/com/annaniks/renehavis/views/main/about-product/about-product.module#AboutProductModule" },
