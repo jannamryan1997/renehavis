@@ -11,7 +11,7 @@ import { Title, Meta } from '@angular/platform-browser';
 export class HomeView implements OnInit {
     public currentSlide: number = 0;
     public serviceTabItem: ServiceTabItem[] = [
-        { router: "/about-product", image: "assets/images/md4.png", title: "О  продукте", type: "Инновационный препарат гиалуроновой кислоты премиум класса.Идеально физиологически сбалансированная гиалуроновая кислота с безупречным профилем безопасности от Швейцарской компанией MDT Int’l SA" },
+        { router: "/about-product", image: "assets/images/md4.png", title: "О  продукте", type: "Инновационный препарат гиалуроновой кислоты для инъекций в коленный сустав премиум класса.Идеально физиологически сбалансированная гиалуроновая кислота с безупречным профилем безопасности от Швейцарской компанией MDT Int’l SA" },
         { router: "/pharmacies", image: "assets/images/md3.png", title: "Аптеки", type: "Здесь вы можете найти список аптек где можно купить препарат" },
         { router: "/instruction", image: "assets/images/md2.png", title: "Инструкция", type: "Инъекция RenehaVis (РенехаВис) должна проводиться только врачом- профессионалом, прошедшим обучение технике введения препарата." },
         { image: "assets/images/md5.png", title: "ПОЛЕЗНЫЕ СТАТЬИ", type: "ПОЛЕЗНЫЕ СТАТЬИ НА ТЕМУ:'ЭФФЕКТИВНОЕ СРЕДСТВО ЛЕЧЕНИЯ СУСТАВОВ'" },

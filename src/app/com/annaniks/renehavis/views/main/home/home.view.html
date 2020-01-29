@@ -34,7 +34,7 @@
         <ngx-slick-carousel class="carousel"  [config]="slideConfig2"   (afterChange)="afterChange($event)">
             <div ngxSlickItem *ngFor="let item of slidesText" class="slide">
               <p class="title">{{item.title}}</p>
-              <p class="title_name" (click)="cl()">{{item.name}}</p>
+              <p class="title_name">{{item.name}}</p>
               <p class="title_profession">{{item.profession}}</p>
             </div>
         </ngx-slick-carousel> 
