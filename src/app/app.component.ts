@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
+import { PlatformService } from './com/annaniks/renehavis/service/platform.service';
 
 @Component({
   selector: 'app-root',
@@ -9,10 +10,11 @@ import { NavigationEnd, Router } from '@angular/router';
 export class AppComponent {
   title = 'renehavis';
 
-  constructor(private _router:Router) {
+  constructor(private _router: Router, private _platformService: PlatformService) {
     this._router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
-        window.scrollTo(0, 0);
+        if (this._platformService.isPlatformBrowser)
+          window.scrollTo(0, 0);
       }
     });
   }

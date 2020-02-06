@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', loadChildren: 'src/app/com/annaniks/renehavis/views/main/main.module#MainModule' }
+  { path: '', loadChildren: './com/annaniks/renehavis/views/main/main.module#MainModule' }
 ];
 
 @NgModule({
