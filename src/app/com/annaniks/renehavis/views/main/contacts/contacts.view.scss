@@ -113,11 +113,18 @@
     }
 
 }
+
 @media only screen and (max-width:500px) {
     #map {
-        height: 200px !important ;
+        height: 200px !important;
     }
-    .menu,.last{
+
+    .menu,
+    .last {
         width: 100% !important;
     }
+}
+
+a {
+    text-decoration: none;
 }
