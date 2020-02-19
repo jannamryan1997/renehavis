@@ -5,7 +5,7 @@
         </div>
         <ul class="nav_items">
 
-            <li class="main_nav_item"><a class="tel_number"> тел․ +7 495 532 67 68</a></li>
+            <li class="main_nav_item"><a class="main_nav_item_link" href="tel:+7 495 532 67 68"> тел․ +7 495 532 67 68</a></li>
             <li class="main_nav_item" *ngFor="let item of navItem" (click)="windowScoll(item.scroll)"><a
                     class="main_nav_item_link" [routerLink]="item.router"
                     routerLinkActive="active_item">{{item.link}}</a></li>
