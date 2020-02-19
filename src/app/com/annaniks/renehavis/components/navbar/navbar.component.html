@@ -2,6 +2,8 @@
         <div class="left_conteiner" full-width>
             <div class="menu_items" full-width cursor-pointer (click)="menuService.openLeftMenu()" *ngFor="let item of menuItem" [routerLink]="item.router"
                 routerLinkActive="activeRouter">
+
+               
                 <div class="items" full-width display-flex>
                     <span class="item_title" font-family-Open-Sans font-weight-bold  [ngStyle]="{'color':color}">{{item.link}}</span>
                     <img  class="image item_image" src="{{item.icon}}">
@@ -12,3 +14,5 @@
     <div class="overlay" *ngIf="menuService.getOpenMenu() && menuService.smallDisplay" (click)="menuService.openLeftMenu()">
     
     </div>
+
+    <!-- +7 495 532 67 68 -->
