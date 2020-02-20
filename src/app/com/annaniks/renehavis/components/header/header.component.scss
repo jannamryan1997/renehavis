@@ -61,6 +61,17 @@
         }
 
     }
+
+   
+        .phone_numbe_item_link{
+            text-decoration: none;
+            color: #005984;
+            display: none;
+            cursor: pointer;
+            i{
+                font-size: 30px;
+            }
+        }
     .material_icon{
         cursor: pointer;
         padding: 20px 20px;
@@ -72,18 +83,6 @@
     }
 }
 
-.tel_number{
-display: inline-block;
-font-weight: bold;
-text-align: left;
-color: #8993a1;
-padding: 10px 20px;
-text-decoration: none;
-cursor: pointer;
-text-transform: uppercase;
-font-family: 'Roboto', sans-serif;
-
-}
 .active_item{
     color: #005984 !important;
 }
@@ -112,6 +111,9 @@ font-family: 'Roboto', sans-serif;
         display: none !important;
     }
     .material_icon{
+        display: block !important;
+    }
+    .phone_numbe_item_link{
         display: block !important;
     }
 }
